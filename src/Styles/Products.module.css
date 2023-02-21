@@ -1,0 +1,40 @@
+.Container {
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 5px;
+    width: 15vw;
+    height: 47vh;
+    margin: 10px;
+}
+
+.Container:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all .2s linear;
+}
+
+.Container img {
+    width: 200px;
+    height: 180px;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkButton {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+.addButton {
+    width: auto;
+    height: 25px;
+    background-color: #0077ff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}

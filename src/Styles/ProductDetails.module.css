@@ -1,0 +1,80 @@
+.Main {
+    display: flex;
+    justify-content: center;
+}
+
+.ouetrContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 70vw;
+    height: 70vh;
+    border: 1px solid #c7c5c5;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ouetrContainer img {
+    width: 300px;
+}
+
+.innerContainer {
+    width: 45vw;
+    height: 40vh;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #c7c5c5;
+    border-radius: 10px;
+}
+
+.Title {
+    color: #0077ff;
+}
+
+.Description {
+    color: rgb(105, 105, 105);
+    font-family: Arial;
+}
+
+.Category span {
+    color: rgb(236, 197, 24);
+    font: bold 16px Arial;
+}
+
+.Category {
+    font-family: Arial;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.lastSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 10px;
+}
+
+.Price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: rgb(0, 140, 0);
+}
+
+.Backbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    text-decoration: none;
+    color: #fff;
+    width: auto;
+    height: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #0077ff;
+}
