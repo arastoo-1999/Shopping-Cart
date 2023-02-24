@@ -17,7 +17,7 @@
     height: 180px;
 }
 
-.Buttons {
+.allButtons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,10 @@
     color: #0000ff;
 }
 
-.addButton {
+.addButton,
+.remove,
+.minus, 
+.plus {
     width: auto;
     height: 25px;
     background-color: #0077ff;
@@ -37,4 +40,10 @@
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    margin-right: 3px;
+}
+
+.minus, 
+.plus {
+    width: 30px;
 }

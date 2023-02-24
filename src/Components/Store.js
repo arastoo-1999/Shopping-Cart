@@ -1,11 +1,10 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 
 // Context
 import { ProductsContext } from '../Context/ProductsContextProvider';
 
 // Components
 import Products from '../Shared/Products';
-import ProductDetails from './ProductDetails';
 
 const Store = () => {
 
