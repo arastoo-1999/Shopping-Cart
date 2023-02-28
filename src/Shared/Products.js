@@ -10,6 +10,9 @@ import styles from "../Styles/Products.module.css";
 // Context
 import { CartContext } from '../Context/CartContextProvider';
 
+// icons
+import Trash from "../assets/trash.svg";
+
 const Products = ({productData}) => {
 
     const {state, dispatch} = useContext(CartContext);
@@ -18,7 +21,7 @@ const Products = ({productData}) => {
         <div className={styles.Container}>
             <img src={productData.image} alt="product"/>
             <h3>{Shorten(productData.title)}</h3>
-            <p>{productData.price}</p>
+            <p className={styles.Price}>{productData.price} $</p>
             <div className={styles.allButtons}>
                 <Link className={styles.linkButton} to={`/products/${productData.id}`}>Details</Link>
             <div>
@@ -26,7 +29,7 @@ const Products = ({productData}) => {
                 quantityCount(state, productData.id) > 1 && <button className={styles.minus} onClick={() => dispatch({type: "DECREASE", payload: productData})}>-</button>
                 }
                 {
-                quantityCount(state, productData.id) === 1 && <button className={styles.remove} onClick={() => dispatch({type: "REMOVE_ITEM", payload: productData})}>Remove</button>
+                quantityCount(state, productData.id) === 1 && <button className={styles.remove} onClick={() => dispatch({type: "REMOVE_ITEM", payload: productData})}><img src={Trash}/></button>
                 } 
                 {
                 isInCart(state, productData.id) 

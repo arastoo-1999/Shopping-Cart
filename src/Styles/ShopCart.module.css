@@ -1,0 +1,79 @@
+.ShopCartContainer {
+    position: relative;
+}
+
+.StatusContainer {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 15px;
+    top: -1px;
+    left: 60%;
+    position: absolute;
+}
+
+.StatusContainer p {
+    font-weight: 500;
+}
+
+.TotalItems,
+.TotalPayments {
+    font: bold 17px Arial;
+    color: #0077ff;
+}
+
+.ButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Clear {
+    color: #008c00;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+.CheckOut {
+    height: 30px;
+    color: #fff;
+    font: bold 14px Arial;
+    border: none;
+    border-radius: 5px;
+    background-color: #008c00;
+}
+
+.Clear, 
+.CheckOut:hover{
+    cursor: pointer;
+}
+
+.checkOutContainer,
+.ClearContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Head {
+    color: #008c00;
+}
+
+.ProductsLink {
+    text-decoration: none;
+    width: auto;
+    height: 20px;
+    background-color: #0077ff;
+    font: bold 15px Arial;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}

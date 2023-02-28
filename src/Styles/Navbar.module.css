@@ -1,0 +1,57 @@
+.Container {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 0 0 40px 0;
+    position: relative;
+    box-shadow: 
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, 
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductsLink {
+    text-decoration: none;
+    font: bold 18px Arial;
+    color: #2c8eff;
+    top: 25px;
+    left: 100px;
+    position: absolute;
+}
+
+.ProductsLink::after {
+    content: " ";
+    display: block;
+    width: 77px;
+    height: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #2c8eff;
+}
+
+.CartLink img {
+    width: 35px;
+    top: 20px;
+    left: 90%;
+    position: absolute;
+}
+
+.CartCounter {
+    top: 20px;
+    left: 92%;
+    position: absolute;
+    font: 850 12px Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(4, 4, 196);
+}

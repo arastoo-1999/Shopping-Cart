@@ -1,0 +1,71 @@
+.Main {
+    margin: 10px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Container {
+    width: 50vw;
+    height: 15vh;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+.Container img {
+    width: 60px;
+    padding: 5px;
+}
+
+.Title {
+    color: #0077ff;
+}
+
+.Price {
+    font: bold 17px Arial;
+    color: #008c00;
+}
+
+.Quantity {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ff9900;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Minus,
+.Plus, 
+.Remove {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font: bold 16px auto;
+    background-color: #0077ff;
+}
+
+.Remove img {
+    width: 15px;
+}

@@ -1,7 +1,7 @@
 .Container {
     border: 1px solid #d1d1d1;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 15vw;
     height: 47vh;
     margin: 10px;
@@ -17,6 +17,11 @@
     height: 180px;
 }
 
+.Price {
+    font: 100 15px Arial;
+    color: #414141;
+}
+
 .allButtons {
     display: flex;
     justify-content: space-between;
@@ -25,25 +30,40 @@
 
 .linkButton {
     text-decoration: none;
-    color: #0000ff;
+    color: #2c8eff;
 }
 
 .addButton,
-.remove,
 .minus, 
-.plus {
+.plus,
+.remove {
     width: auto;
     height: 25px;
-    background-color: #0077ff;
+    background-color: #2c8eff;
     border: none;
     outline: none;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
     margin-right: 3px;
+    font: bold 16px auto;
+}
+
+.addButton {
+    font-size: 14px;
 }
 
 .minus, 
 .plus {
     width: 30px;
+}
+
+.remove {
+    width: 40px;
+    height: 25px;
+}
+
+.remove img {
+    width: 15px;
+    height: 15px;
 }
