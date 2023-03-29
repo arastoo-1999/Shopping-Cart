@@ -8,7 +8,7 @@ import { CartContext } from '../Context/CartContextProvider';
 import Cart from '../Shared/Cart';
 
 // Styles 
-import Styles from "../Styles/ShopCart.module.css";
+import Styles from "../Styles/ShopCart.module.scss";
 
 const ShopCart = () => {
 

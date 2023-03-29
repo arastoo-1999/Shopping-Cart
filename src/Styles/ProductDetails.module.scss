@@ -1,4 +1,5 @@
 @import "Variables";
+@import "Mixins";
 
 .Main {
     display: flex;
@@ -6,27 +7,24 @@
 }
 
 .ouetrContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Display(flex, center, center);
+    @include Border(1px, solid, $BorderColor);
     margin-top: 30px;
     width: 70vw;
     height: 70vh;
-    border: 1px solid #c7c5c5;
     border-radius: 10px;
     padding: 10px;
-}
-
-.ouetrContainer img {
-    width: 300px;
+    img {
+        width: 300px;
+    }
 }
 
 .innerContainer {
+    @include Border(1px, solid, $BorderColor);
     width: 45vw;
     height: 40vh;
     padding: 10px;
     margin: 20px;
-    border: 1px solid #c7c5c5;
     border-radius: 10px;
 }
 
@@ -40,8 +38,8 @@
 }
 
 .Category span {
-    color: rgb(236, 197, 24);
-    font: bold 16px Arial;
+    color: #ecc518;
+    @include Font(bold, 16px, Arial);
 }
 
 .Category {
@@ -57,20 +55,18 @@
 }
 
 .Price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Display(flex, center, center);
+    @include Font(bold, auto, Arial);
+    padding: 3px;
     width: 50px;
     height: 25px;
     color: $WhiteColor;
     border-radius: 3px;
-    background-color: #008c00;
+    background-color: $GreenColor;
 }
 
 .Backbutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Display(flex, center, center);
     padding: 3px;
     text-decoration: none;
     color: $WhiteColor;

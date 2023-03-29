@@ -10,7 +10,7 @@ import { Shorten } from '../helpers/functions';
 import Trash from "../assets/trash.svg";
 
 // Styles
-import Styles from "../Styles/Cart.module.css";
+import Styles from "../Styles/Cart.module.scss";
 
 const Cart = (props) => {
 

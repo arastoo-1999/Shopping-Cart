@@ -1,39 +1,38 @@
 @import "Variables";
+@import "Mixins";
 
 .ShopCartContainer {
     position: relative;
 }
 
 .StatusContainer {
+    @include Border(1px, solid, $BorderColor);
     width: 300px;
     height: 150px;
-    border: 1px solid #808080;
     border-radius: 5px;
     padding: 15px;
     top: -1px;
     left: 60%;
     position: absolute;
-}
 
-.StatusContainer p {
-    font-weight: 500;
+    p {
+        font-weight: 500;
+    }
 }
 
 .TotalItems,
 .TotalPayments {
-    font: bold 17px Arial;
+    @include Font(bold, 17px, Arial);
     color: $BlueColor;
 }
 
 .ButtonContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include Display(flex, space-between, center);
     margin-top: 50px;
 }
 
 .Clear {
-    color: #008c00;
+    color: $GreenColor;
     border: none;
     outline: none;
     font-size: 17px;
@@ -41,41 +40,37 @@
 }
 
 .CheckOut {
+    @include Font(bold, 14px, Arial);
     height: 30px;
     color: $WhiteColor;
-    font: bold 14px Arial;
     border: none;
     border-radius: 5px;
-    background-color: #008c00;
+    background-color: $GreenColor;
 }
 
 .Clear, 
-.CheckOut:hover{
+.CheckOut {
     cursor: pointer;
 }
 
 .checkOutContainer,
 .ClearContainer {
-    display: flex;
+    @include Display(flex, center, center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .Head {
-    color: #008c00;
+    color: $GreenColor;
 }
 
 .ProductsLink {
+    @include Display(flex, center, center);
+    @include Font(bold, 15px, Arial);
     text-decoration: none;
     width: auto;
     height: 20px;
     background-color: $BlueColor;
-    font: bold 15px Arial;
     color:  $WhiteColor;
     padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
 }

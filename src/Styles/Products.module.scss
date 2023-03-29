@@ -1,7 +1,8 @@
 @import "Variables"; 
+@import "Mixins";
 
 .Container {
-    border: 1px solid #d1d1d1;
+    @include Border(1px, solid, $BorderColor);
     border-radius: 10px;
     padding: 10px;
     width: 15vw;
@@ -24,9 +25,7 @@
 }
 
 .allButtons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include Display(flex, space-between, center);
 }
 
 .linkButton {
@@ -47,7 +46,7 @@
     color: $WhiteColor;
     cursor: pointer;
     margin-right: 3px;
-    font: bold 16px auto;
+    @include Font(bold, 16px, auto);
 }
 
 .addButton {
@@ -62,9 +61,8 @@
 .remove {
     width: 40px;
     height: 25px;
-}
-
-.remove img {
-    width: 15px;
-    height: 15px;
+    img {
+        width: 15px;
+        height: 15px;
+    }
 }

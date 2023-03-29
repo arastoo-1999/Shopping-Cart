@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import { Shorten, isInCart, quantityCount } from '../helpers/functions';
 
 // Styles
-import styles from "../Styles/Products.module.css";
+import styles from "../Styles/Products.module.scss";
 
 // Context
 import { CartContext } from '../Context/CartContextProvider';

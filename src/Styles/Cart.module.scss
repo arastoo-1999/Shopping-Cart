@@ -1,4 +1,5 @@
 @import "Variables";
+@import "Mixins";
 
 .Main {
     margin: 10px 100px;
@@ -7,19 +8,16 @@
 }
 
 .Container {
+    @include Display(flex, space-between, center);
+    @include Border(1px, solid, $BorderColor);
     width: 50vw;
     height: 15vh;
     padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #808080;
     border-radius: 5px;
-}
-
-.Container img {
-    width: 60px;
-    padding: 5px;
+    img {
+        width: 60px;
+        padding: 5px;
+    }
 }
 
 .Title {
@@ -27,44 +25,38 @@
 }
 
 .Price {
-    font: bold 17px Arial;
-    color: #008c00;
+    @include Font(bold, 17px, Arial);
+    color: $GreenColor;
 }
 
 .Quantity {
+    @include Display(flex, center, center);
     width: 20px;
     height: 20px;
     color: $WhiteColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: bold;
     border-radius: 5px;
     background-color: #ff9900;
 }
 
 .Buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Display(flex, center, center);
 }
 
 .Minus,
 .Plus, 
 .Remove {
+    @include Font(bold, 16px, auto);
+    @extend .Buttons;
     width: 25px;
     height: 25px;
     padding: 3px;
     margin-right: 3px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: none;
     outline: none;
     border-radius: 5px;
     color: $WhiteColor;
-    font: bold 16px auto;
     background-color: $BlueColor;
 }
 

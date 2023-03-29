@@ -8,7 +8,7 @@ import { CartContext } from '../Context/CartContextProvider';
 import shopIcon from "../assets/shop.svg";
 
 // Styles
-import Styles from "../Styles/Navbar.module.css";
+import Styles from "../Styles/Navbar.module.scss";
 
 const Navbar = () => {
 

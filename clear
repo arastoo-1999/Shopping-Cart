@@ -1,0 +1,29 @@
+[33mcommit acc71ee043c8756f9759f1484f1b3eceb5e6e313[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Arastoo Afra <arastoo.afra.1997@gmail.com>
+Date:   Wed Mar 29 12:37:10 2023 +0430
+
+    Update all of styles and rewrite them with Sass(add Variables)
+
+[33mcommit 11846d2bbcb95c037b9002522ecb883b41a9ba98[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Arastoo Afra <arastoo.afra.1997@gmail.com>
+Date:   Tue Feb 28 17:09:44 2023 +0330
+
+    Add to ShopCart and Computing the Total items and Total Payments, also add Navbar section done by react.
+
+[33mcommit c9535a659b3de56248b1ddbda9e4ca2be18fcb89[m
+Author: Arastoo Afra <arastoo.afra.1997@gmail.com>
+Date:   Fri Feb 24 15:38:44 2023 +0330
+
+    Cart context and new functions for handle dynamic buttons create successfully.
+
+[33mcommit d9ef00453595fe7e5b13ccd41a05c0ff6a2de556[m
+Author: Arastoo Afra <arastoo.afra.1997@gmail.com>
+Date:   Tue Feb 21 17:21:12 2023 +0330
+
+    Shopping cart with product details page created.
+
+[33mcommit aa96f87a91f8ea2c2feb9bf2599882b8b4c62719[m
+Author: Arastoo Afra <arastoo.afra.1997@gmail.com>
+Date:   Thu Feb 16 17:18:12 2023 +0330
+
+    Initialize project using Create React App

@@ -8,7 +8,7 @@ import { ProductsContext } from '../Context/ProductsContextProvider';
 import { Shorten } from '../helpers/functions';
 
 // Styles
-import Styles from "../Styles/ProductDetails.module.css";
+import Styles from "../Styles/ProductDetails.module.scss";
 
 const ProductDetails = () => {
 

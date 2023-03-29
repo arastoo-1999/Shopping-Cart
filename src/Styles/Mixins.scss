@@ -1,0 +1,13 @@
+@mixin Display($display, $j_content, $a_items) {
+    display: $display;
+    justify-content: $j_content;
+    align-items: $a_items;
+}
+
+@mixin Font($Weight, $Size, $F_family) {
+    font: $Weight $Size $F_family;
+}
+
+@mixin Border($Size, $Style, $Color) {
+    border: $Size $Style $Color;
+}
