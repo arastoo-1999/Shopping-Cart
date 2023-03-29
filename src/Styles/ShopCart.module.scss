@@ -1,3 +1,5 @@
+@import "Variables";
+
 .ShopCartContainer {
     position: relative;
 }
@@ -20,7 +22,7 @@
 .TotalItems,
 .TotalPayments {
     font: bold 17px Arial;
-    color: #0077ff;
+    color: $BlueColor;
 }
 
 .ButtonContainer {
@@ -40,7 +42,7 @@
 
 .CheckOut {
     height: 30px;
-    color: #fff;
+    color: $WhiteColor;
     font: bold 14px Arial;
     border: none;
     border-radius: 5px;
@@ -68,9 +70,9 @@
     text-decoration: none;
     width: auto;
     height: 20px;
-    background-color: #0077ff;
+    background-color: $BlueColor;
     font: bold 15px Arial;
-    color: #fff;
+    color:  $WhiteColor;
     padding: 5px;
     display: flex;
     justify-content: center;

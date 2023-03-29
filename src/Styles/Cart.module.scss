@@ -1,3 +1,5 @@
+@import "Variables";
+
 .Main {
     margin: 10px 100px;
     display: flex;
@@ -21,7 +23,7 @@
 }
 
 .Title {
-    color: #0077ff;
+    color: $BlueColor;
 }
 
 .Price {
@@ -32,7 +34,7 @@
 .Quantity {
     width: 20px;
     height: 20px;
-    color: #fff;
+    color: $WhiteColor;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,9 +63,9 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    color: #fff;
+    color: $WhiteColor;
     font: bold 16px auto;
-    background-color: #0077ff;
+    background-color: $BlueColor;
 }
 
 .Remove img {

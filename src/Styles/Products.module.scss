@@ -1,3 +1,5 @@
+@import "Variables"; 
+
 .Container {
     border: 1px solid #d1d1d1;
     border-radius: 10px;
@@ -5,16 +7,15 @@
     width: 15vw;
     height: 47vh;
     margin: 10px;
-}
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition: all .2s linear;
+    }
 
-.Container:hover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    transition: all .2s linear;
-}
-
-.Container img {
-    width: 200px;
-    height: 180px;
+    img {
+        width: 200px;
+        height: 180px;
+    }
 }
 
 .Price {
@@ -30,7 +31,7 @@
 
 .linkButton {
     text-decoration: none;
-    color: #2c8eff;
+    color: $PrimaryColor;
 }
 
 .addButton,
@@ -39,11 +40,11 @@
 .remove {
     width: auto;
     height: 25px;
-    background-color: #2c8eff;
+    background-color: $PrimaryColor;
     border: none;
     outline: none;
     border-radius: 5px;
-    color: #fff;
+    color: $WhiteColor;
     cursor: pointer;
     margin-right: 3px;
     font: bold 16px auto;

@@ -1,3 +1,5 @@
+@import "Variables";
+
 .Main {
     display: flex;
     justify-content: center;
@@ -29,7 +31,7 @@
 }
 
 .Title {
-    color: #0077ff;
+    color: $BlueColor;
 }
 
 .Description {
@@ -60,7 +62,7 @@
     align-items: center;
     width: 50px;
     height: 25px;
-    color: #fff;
+    color: $WhiteColor;
     border-radius: 3px;
     background-color: #008c00;
 }
@@ -71,10 +73,10 @@
     align-items: center;
     padding: 3px;
     text-decoration: none;
-    color: #fff;
+    color: $WhiteColor;
     width: auto;
     height: 25px;
     border-radius: 3px;
     cursor: pointer;
-    background-color: #0077ff;
+    background-color: $BlueColor;
 }
