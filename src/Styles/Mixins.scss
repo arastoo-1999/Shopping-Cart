@@ -11,3 +11,9 @@
 @mixin Border($Size, $Style, $Color) {
     border: $Size $Style $Color;
 }
+
+@mixin Mobilemode($width) {
+    @media(max-width: $width) {
+        @content;
+    }
+}

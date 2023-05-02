@@ -22,7 +22,6 @@
     }
 }
 
-
 .CartCounter {
     @include Display(flex, center, center);
     @include Font(850, 12px, Arial);
@@ -34,8 +33,11 @@
     height: 15px;
     border-radius: 50%;
     background-color: rgb(4, 4, 196);
+    @include Mobilemode(480px) {
+        left: 95%;
+        position: absolute;
+    }
 }
-
 
 .ProductsLink {
     @include Font(bold, 18px, Arial);
@@ -44,6 +46,10 @@
     top: 25px;
     left: 100px;
     position: absolute;
+    @include Mobilemode(480px) {
+        left: 50px;
+        position: absolute;
+    }   
 
     &::after {
         content: " ";
